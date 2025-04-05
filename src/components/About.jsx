@@ -16,7 +16,7 @@ const AboutSection = () => {
                             A passionate <em className="em">photographer</em> who has been working in this field for{" "}
                             <em className="em">the last 10 years.</em> I’m ready to give you my best.
                         </p>
-                        <img src="./assets/images/signature.png" width="151" height="92" loading="lazy" alt="signature" className="img" />
+                        <img src="../../assets/images/signature.png" width="151" height="92" loading="lazy" alt="signature" className="img" />
                     </div>
                 </div>
 
