@@ -33,7 +33,7 @@ function App() {
       </div>
 
       <Header />
-      <main className='' >
+      <main className='' style={{ userSelect: 'none' }} >
         {sections.map((Component, index) => (
           <section key={index} data-scroll className="section">
             {Component}

@@ -92,7 +92,7 @@ const Gallery = () => {
 
                                     <a href="#" className="btn-icon">
                                         <img
-                                            src="../assets/images/arrow-forward.svg"
+                                            src="./assets/images/arrow-forward.svg"
                                             width="43"
                                             height="20"
                                             loading="lazy"
@@ -107,7 +107,7 @@ const Gallery = () => {
 
                 <a href="#service" className="scroll-down">
                     <img
-                        src="../assets/images/scroll-down.svg"
+                        src="./assets/images/scroll-down.svg"
                         width="40"
                         height="66"
                         loading="lazy"
@@ -116,7 +116,7 @@ const Gallery = () => {
                 </a>
 
                 <img
-                    src="../assets/images/gallery-shape.svg"
+                    src="./assets/images/gallery-shape.svg"
                     width="220"
                     height="78"
                     loading="lazy"

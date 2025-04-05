@@ -3,7 +3,7 @@ import "./style.css"; // Ensure you have this CSS file
 
 const portfolioData = [
     {
-        imgSrc: "../assets/images/portfolio-1.jpg",
+        imgSrc: "./assets/images/portfolio-1.jpg",
         imgAlt: "Shoe Promo",
         title: "Shoe Promo",
         category: "Product",
@@ -11,7 +11,7 @@ const portfolioData = [
         height: 605,
     },
     {
-        imgSrc: "../assets/images/portfolio-2.jpg",
+        imgSrc: "./assets/images/portfolio-2.jpg",
         imgAlt: "Wedding Shot",
         title: "Wedding Shot",
         category: "Wedding",
@@ -19,7 +19,7 @@ const portfolioData = [
         height: 1091,
     },
     {
-        imgSrc: "../assets/images/portfolio-3.jpg",
+        imgSrc: "./assets/images/portfolio-3.jpg",
         imgAlt: "Fashion Show",
         title: "Fashion Show",
         category: "Fashion, Model",
@@ -27,7 +27,7 @@ const portfolioData = [
         height: 1000,
     },
     {
-        imgSrc: "../assets/images/portfolio-4.jpg",
+        imgSrc: "./assets/images/portfolio-4.jpg",
         imgAlt: "Jumbo Barger",
         title: "Jumbo Barger",
         category: "Food",
@@ -114,7 +114,7 @@ const Portfolio = () => {
                     </div>
                 </div>
 
-                <img src="../assets/images/portfolio-shape.svg" width="286" height="232" loading="lazy" alt="" className="shape" />
+                <img src="./assets/images/portfolio-shape.svg" width="286" height="232" loading="lazy" alt="" className="shape" />
             </div>
         </section>
     );

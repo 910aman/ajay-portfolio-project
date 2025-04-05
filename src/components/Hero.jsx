@@ -50,7 +50,7 @@ const Hero = () => {
         <section className="section hero" id="home" aria-label="home">
             <div className="container">
                 <img
-                    src="../assets/images/hero-banner.png"
+                    src="./assets/images/hero-banner.png"
                     width="322"
                     height="322"
                     alt=""
@@ -72,7 +72,7 @@ const Hero = () => {
             </div>
 
             <img
-                src="../assets/images/hero-shape.svg"
+                src="./assets/images/hero-shape.svg"
                 width="211"
                 height="189"
                 alt=""
