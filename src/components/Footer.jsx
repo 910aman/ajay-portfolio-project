@@ -13,7 +13,7 @@ const Footer = () => {
                     </h2>
 
                     <a href="#" className="btn-icon" >
-                        <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy" alt="arrow-forward icon" />
+                        <img src="../assets/images/arrow-forward.svg" width="43" height="20" loading="lazy" alt="arrow-forward icon" />
                     </a>
 
                     {/* Absolute Images */}
@@ -30,14 +30,14 @@ const Footer = () => {
                         />
                     ))}
 
-                    <img src="./assets/images/footer-shape.svg" width="185" height="134" loading="lazy" alt="" className="shape" />
+                    <img src="../assets/images/footer-shape.svg" width="185" height="134" loading="lazy" alt="" className="shape" />
                 </div>
             </div>
 
             <div className="footer-bottom">
                 <div className="container">
                     <a href="#" className="logo">
-                        <img src="./assets/images/logo.svg" width="40" height="40" loading="lazy" alt="Ajay home" />
+                        <img src="../assets/images/logo.svg" width="40" height="40" loading="lazy" alt="Ajay home" />
                     </a>
 
                     <ul className="social-list">
@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-bg has-before">
-                <img src="./assets/images/footer-bg.jpg" width="1920" height="1135" loading="lazy" alt="photography" className="img-cover" />
+                <img src="../assets/images/footer-bg.jpg" width="1920" height="1135" loading="lazy" alt="photography" className="img-cover" />
             </div>
         </footer>
     );

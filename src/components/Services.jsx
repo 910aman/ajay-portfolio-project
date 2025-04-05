@@ -3,25 +3,25 @@ import "./style.css"; // Ensure you have this CSS file
 
 const servicesData = [
     {
-        imgSrc: "./assets/images/service-1.jpg",
+        imgSrc: "../assets/images/service-1.jpg",
         imgAlt: "Wedding Photography",
         title: "Wedding Photography",
         subtitle: "Aut temporibus qui vero.",
     },
     {
-        imgSrc: "./assets/images/service-2.jpg",
+        imgSrc: "../assets/images/service-2.jpg",
         imgAlt: "Event Organiser",
         title: "Event Organiser",
         subtitle: "Nobis, magni modi ipsa culpa.",
     },
     {
-        imgSrc: "./assets/images/service-3.jpg",
+        imgSrc: "../assets/images/service-3.jpg",
         imgAlt: "Product Marketing",
         title: "Product Marketing",
         subtitle: "Tenetur porro repellendus!",
     },
     {
-        imgSrc: "./assets/images/service-4.jpg",
+        imgSrc: "../assets/images/service-4.jpg",
         imgAlt: "Videography",
         title: "Videography",
         subtitle: "Amet consectetur adipisicing elit.",
