@@ -21,21 +21,25 @@ const Category = () => {
         <section className="category">
             <div className="container">
                 <ul className="category-list">
-                    {categories.map((category, index) => (
-                        <li className="category-item" key={index} data-reveal>
-                            <a href="#" className="category-card">
-                                <h3 className="h4 card-title">{category.title}</h3>
-                                <figure className="card-banner img-holder">
-                                    <img
-                                        src={`/assets/images/${category.image}`}
-                                        alt={category.title}
-                                        className="img-cover"
-                                        loading="lazy"
-                                    />
-                                </figure>
-                            </a>
-                        </li>
-                    ))}
+                    {categories.map((category, index) => {
+                        const isLast = index === categories.length - 1;
+                        const titleEnding = isLast ? '.' : ',';
+                        return (
+                            <li className="category-item" key={index} data-reveal>
+                                <span className="category-card">
+                                    <h3 className="h4 card-title">{category.title}{titleEnding}</h3>
+                                    <figure className="card-banner img-holder">
+                                        <img
+                                            src={`/assets/images/${category.image}`}
+                                            alt={category.title}
+                                            className="img-cover"
+                                            loading="lazy"
+                                        />
+                                    </figure>
+                                </span>
+                            </li>
+                        )
+                    })}
                 </ul>
             </div>
         </section>

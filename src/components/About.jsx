@@ -9,7 +9,7 @@ const AboutSection = () => {
                 <div className="about-content">
                     <h2 className="h2 section-title">
                         Hi. I’m <br />
-                        Richard Ryan
+                        Ajay Rajput
                     </h2>
                     <div className="wrapper has-before" >
                         <p className="section-text">
@@ -27,7 +27,7 @@ const AboutSection = () => {
                             width="512"
                             height="684"
                             loading="lazy"
-                            alt="Richard Ryan"
+                            alt="Ajay Rajput"
                             className="img-cover"
                         />
                     </div>

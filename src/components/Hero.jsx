@@ -58,7 +58,7 @@ const Hero = () => {
                 />
 
                 <div className="hero-content">
-                    <h1 className="h1 hero-title">Richard Ryan</h1>
+                    <h1 className="h1 hero-title">Ajay Rajput</h1>
 
                     <div className="wrapper h2">
                         <strong className="strong" data-letter-effect>Photographer</strong>

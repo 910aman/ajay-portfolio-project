@@ -29,7 +29,7 @@ const Header = () => {
         <header className={`header ${isHeaderActive ? 'active' : ''}`} data-header>
             <div className="container">
                 <a href="#" className="logo">
-                    <img src="/assets/images/logo.svg" width="40" height="40" alt="Richard home" />
+                    <img src="/assets/images/logo.svg" width="40" height="40" alt="Ajay home" />
                 </a>
 
                 <button className="nav-open-btn" aria-label="open menu" onClick={toggleNav}>
@@ -39,7 +39,7 @@ const Header = () => {
                 <nav className={`navbar ${isNavOpen ? 'active' : ''}`} >
                     <div className="navbar-top">
                         <a href="#" className="logo">
-                            <img src="/assets/images/nav-logo.svg" width="140" height="40" alt="Richard home" className="img" />
+                            <img src="/assets/images/nav-logo.svg" width="140" height="40" alt="Ajay home" className="img" />
                         </a>
 
                         <button className="nav-close-btn" aria-label="close menu" onClick={toggleNav}>

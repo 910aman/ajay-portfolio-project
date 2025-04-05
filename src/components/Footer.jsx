@@ -37,7 +37,7 @@ const Footer = () => {
             <div className="footer-bottom">
                 <div className="container">
                     <a href="#" className="logo">
-                        <img src="./assets/images/logo.svg" width="40" height="40" loading="lazy" alt="Richard home" />
+                        <img src="./assets/images/logo.svg" width="40" height="40" loading="lazy" alt="Ajay home" />
                     </a>
 
                     <ul className="social-list">

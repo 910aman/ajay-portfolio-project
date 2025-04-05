@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 // src/App.jsx
 import './App.css';
 import './components/style.css'
@@ -16,6 +17,15 @@ function App() {
   useScrollAnimation();
   useScrollReveal();
 
+  const sections = [
+    <Hero />,
+    <Gallery />,
+    <Category />,
+    <AboutSection />,
+    <ServiceSection />,
+    <Portfolio />,
+  ];
+
   return (
     <>
       <div className="App bg-smokey-black text-white font-gordita text-[1.6rem] leading-[2.15] overflow-x-hidden">
@@ -24,24 +34,11 @@ function App() {
 
       <Header />
       <main className='' >
-        <section data-scroll className="section">
-          <Hero />
-        </section>
-        <section data-scroll className="section">
-          <Gallery />
-        </section>
-        <section data-scroll className="section">
-          <Category />
-        </section>
-        <section data-scroll className="section">
-          <AboutSection />
-        </section>
-        <section data-scroll className="section">
-          <ServiceSection />
-        </section>
-        <section data-scroll className="section">
-          <Portfolio />
-        </section>
+        {sections.map((Component, index) => (
+          <section key={index} data-scroll className="section">
+            {Component}
+          </section>
+        ))}
       </main >
       <Footer />
       <BackToTop />

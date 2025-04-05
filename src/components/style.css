@@ -790,6 +790,7 @@ body.active {
 .category-card {
     position: relative;
     text-align: center;
+    cursor: pointer;
 }
 
 .category-card .card-title {
