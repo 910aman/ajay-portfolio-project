@@ -40,7 +40,9 @@ function App() {
           </section>
         ))}
       </main >
-      <Footer />
+      <footer style={{ userSelect: 'none' }}>
+        <Footer />
+      </footer>
       <BackToTop />
       <CustomCursor />
 

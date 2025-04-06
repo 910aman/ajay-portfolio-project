@@ -61,10 +61,10 @@ const Hero = () => {
                     <h1 className="h1 hero-title">Ajay Rajput</h1>
 
                     <div className="wrapper h2">
+                        <strong className="strong" data-letter-effect>Retoucher</strong>
                         <strong className="strong" data-letter-effect>Photographer</strong>
                         <strong className="strong" data-letter-effect>Shutterbug</strong>
                         <strong className="strong" data-letter-effect>Cameraman</strong>
-                        <strong className="strong" data-letter-effect>Pacific Portraits</strong>
                     </div>
 
                     <p className="hero-text">15+ Years Of Experience</p>
