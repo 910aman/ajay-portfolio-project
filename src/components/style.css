@@ -740,39 +740,33 @@ body.active {
 /*-----------------------------------*\
   #CATEGORY
 \*-----------------------------------*/
-
+/* General Category Section Styles */
 .category {
     padding-top: 100px;
-        padding-bottom: 100px;
-    --section-padding: 40px;
+    padding-bottom: 100px;
+    --section-padding: 60px;
+    /* Default section padding */
     border-block: 1px solid var(--white_a9);
 }
 
+/* Category List Layout */
 .category-list {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 35px 10px;
+    row-gap: 0;
+    column-gap: 15px;
 }
 
+/* Category Item Styles */
 .category-item {
     max-width: calc(50% - 5px);
+    min-width: max-content;
 }
 
-.category-card .card-title {
-    color: var(--white_a25);
-    margin-block-end: 10px;
-    text-align: center;
-    transition: var(--transition-2);
-}
-
-.category-card:is(:hover, :focus-visible) .card-title {
-    color: var(--white);
-}
-
-/* New CATEGORY SECTION Code */
-
+/* Category Card Styles */
 .category-card {
     position: relative;
     text-align: center;
@@ -781,14 +775,17 @@ body.active {
 
 .category-card .card-title {
     color: rgba(255, 255, 255, 0.25);
+    margin-block-end: 10px;
     transition: color 0.3s ease-in-out;
+    font-size: var(--fs-4, 5.5rem);
+    /* Default font size */
 }
 
 .category-card:hover .card-title {
     color: white;
 }
 
-/* Hover Effect for Images */
+/* Hover Effect for Card Banner */
 .category-card .card-banner {
     position: absolute;
     bottom: 100%;
@@ -806,7 +803,68 @@ body.active {
     opacity: 1;
 }
 
+/* Responsive Design */
 
+/* Max-width: 1440px (Large Desktop) */
+@media (max-width: 1440px) {
+    .category-item {
+        max-width: calc(33.33% - 10px);
+        /* Adjust to 3 items per row */
+    }
+
+    .category-card .card-title {
+        --fs-4: 6rem;
+        /* Larger font size for larger screens */
+    }
+
+    .category-list {
+        justify-content: space-around;
+        /* Add more space between items */
+    }
+}
+
+/* Max-width: 768px (Tablets) */
+@media (max-width: 768px) {
+    .category-item {
+        max-width: calc(50% - 5px);
+        /* 2 items per row */
+    }
+
+    .category-card .card-title {
+        --fs-4: 5rem;
+        /* Adjust font size for tablets */
+    }
+
+    .category-list {
+        justify-content: space-around;
+        /* Distribute items evenly */
+    }
+}
+
+/* Max-width: 425px (Mobile) */
+@media (max-width: 425px) {
+    .category-list {
+        flex-direction: column;
+        /* Stack items vertically */
+        gap: 15px;
+        /* Space between items */
+    }
+
+    .category-item {
+        max-width: 100%;
+        /* Full width for each item */
+    }
+
+    .category-card .card-title {
+        --fs-4: 3.5rem;
+        /* Smaller font size for mobile */
+    }
+
+    .category {
+        --section-padding: 40px;
+        /* Smaller padding for mobile */
+    }
+}
 
 /*-----------------------------------*\
   #ABOUT
