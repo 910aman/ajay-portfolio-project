@@ -742,6 +742,8 @@ body.active {
 \*-----------------------------------*/
 
 .category {
+    padding-top: 100px;
+        padding-bottom: 100px;
     --section-padding: 40px;
     border-block: 1px solid var(--white_a9);
 }
@@ -770,22 +772,6 @@ body.active {
 }
 
 /* New CATEGORY SECTION Code */
-.category {
-    --section-padding: 60px;
-    border-block: 1px solid rgba(255, 255, 255, 0.9);
-    padding-inline: 40px;
-}
-
-.category-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 35px 10px;
-}
-
-.category-item {
-    max-width: 235px;
-}
 
 .category-card {
     position: relative;
