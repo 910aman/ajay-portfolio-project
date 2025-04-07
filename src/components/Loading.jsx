@@ -15,7 +15,7 @@ const Loading = () => {
     }, []);
 
     return (
-        <div className={`loading ${isLoaded ? 'loaded' : ''}`} data-loading>
+        <div className={`loading ${isLoaded ? 'loaded' : ''}`} data-loading >
             <img src="/assets/images/loading.svg" width="55" height="55" alt="loading" className="img" />
             <img src="/assets/images/loading-circle.svg" width="70" height="70" alt="" className="circle" />
         </div>
