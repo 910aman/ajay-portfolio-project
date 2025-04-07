@@ -350,10 +350,10 @@ body.active {
     transition: opacity 0.5s ease-in-out, transform 0.5s var(--cubic-in);
 }
 
-.loading.loaded {
+.loading .loaded {
     opacity: 0;
-        visibility: hidden;
     transform: scaleY(0);
+    visibility: hidden;
     pointer-events: none;
 }
 
@@ -365,14 +365,14 @@ body.active {
     transition: var(--transition-2);
 }
 
-.loading.loaded>* {
+.loading .loaded>* {
     opacity: 0;
 }
 
 /* Circle Animation */
 .loading .circle {
+    animation: rotate 2s linear infinite;
     position: absolute;
-        animation: rotate 2s linear infinite;
 }
 
 @keyframes rotate {
