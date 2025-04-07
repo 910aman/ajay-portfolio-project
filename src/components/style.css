@@ -332,41 +332,49 @@ body.active {
   #LOADING
 \*-----------------------------------*/
 
-/* General Loading Screen Styles */
-/* Basic styling for the loading screen */
 .loading {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
-    background: rgba(255, 255, 255, 0.9);
-        height: 100vh;
-    justify-content: center;
-    display: flex;
-        align-items: center;
-        transition: opacity 0.5s ease-in-out;
-        z-index: 9999;
+    height: 100vh;
+    background-color: var(--white);
+        z-index: 5;
+        transform-origin: bottom;
+        transition: 0.5s var(--cubic-in);
+        transition-delay: 0.5s;
+    }
+    
+    .loading.loaded {
+        transform: scaleY(0);
+        pointer-events: none;
+    }
+    
+    .loading>* {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: var(--transition-2);
 }
 
-/* When the page is loaded, fade out the loading screen */
-.loading .loaded {
+.loading.loaded>* {
     opacity: 0;
-    visibility: hidden;
 }
 
-/* Styling for the rotating circle animation */
 .loading .circle {
-    position: absolute;
-    animation: rotate 2s linear infinite;
-    /* Infinite rotation with 2s duration */
+    animation: rotate360 1.5s linear infinite;
 }
 
-/* Keyframe for the rotating animation */
 @keyframes rotate {
+    0% {
+            transform: translate(-50%, -50%) rotate(0);
+        }
     100% {
-        transform: rotate(360deg);
+        transform: translate(-50%, -50%) rotate(1turn);
     }
 }
+
 
 
 
