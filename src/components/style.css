@@ -332,20 +332,27 @@ body.active {
   #LOADING
 \*-----------------------------------*/
 
+/* General Loading Screen Styles */
 .loading {
     position: fixed;
     top: 0;
+    align-items: center;
     left: 0;
+    display: flex;
     width: 100vw;
+    justify-content: center;
     height: 100vh;
     background-color: var(--white);
     z-index: 5;
     transform-origin: bottom;
     transition: 0.5s var(--cubic-in);
     transition-delay: 0.5s;
+    transition: opacity 0.5s ease-in-out, transform 0.5s var(--cubic-in);
 }
 
 .loading.loaded {
+    opacity: 0;
+        visibility: hidden;
     transform: scaleY(0);
     pointer-events: none;
 }
@@ -362,19 +369,18 @@ body.active {
     opacity: 0;
 }
 
+/* Circle Animation */
 .loading .circle {
-    animation: rotate360 1.5s linear infinite;
+    position: absolute;
+        animation: rotate 2s linear infinite;
 }
 
-@keyframes rotate360 {
-    0% {
-        transform: translate(-50%, -50%) rotate(0);
-    }
-
+@keyframes rotate {
     100% {
-        transform: translate(-50%, -50%) rotate(1turn);
+        transform: rotate(360deg);
     }
 }
+
 
 
 
