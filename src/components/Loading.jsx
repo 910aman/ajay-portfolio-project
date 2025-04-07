@@ -10,10 +10,10 @@ const Loading = () => {
             setIsLoaded(true);
             document.body.classList.remove('active');
         };
-        window.addEventListener('load', handleLoad);
+        window.addEventListener('loaded', handleLoad);
         // Cleanup function to remove event listener when component unmounts
         return () => {
-            window.removeEventListener('load', handleLoad);
+            window.removeEventListener('loaded', handleLoad);
         };
     }, []);
 
