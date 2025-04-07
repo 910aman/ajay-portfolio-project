@@ -10,7 +10,7 @@ const Loading = () => {
             setIsLoaded(true);
             document.body.classList.remove('active');
         });
-    }, []);
+    }, [1000]);
 
     return (
         <div className={`loading ${isLoaded ? 'loaded' : ''}`} data-loading>
