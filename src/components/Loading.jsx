@@ -5,11 +5,16 @@ const Loading = () => {
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
-        // Simulating page load
-        window.addEventListener('loaded', () => {
+        // Wait for window load event to simulate page load completion
+        const handleLoad = () => {
             setIsLoaded(true);
             document.body.classList.remove('active');
-        });
+        };
+        window.addEventListener('load', handleLoad);
+        // Cleanup function to remove event listener when component unmounts
+        return () => {
+            window.removeEventListener('load', handleLoad);
+        };
     }, []);
 
     return (

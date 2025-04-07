@@ -333,55 +333,40 @@ body.active {
 \*-----------------------------------*/
 
 /* General Loading Screen Styles */
+/* Basic styling for the loading screen */
 .loading {
     position: fixed;
     top: 0;
-    align-items: center;
     left: 0;
-    display: flex;
     width: 100vw;
+    background: rgba(255, 255, 255, 0.9);
+        height: 100vh;
     justify-content: center;
-    height: 100vh;
-    background-color: var(--white);
-    z-index: 5;
-    transform-origin: bottom;
-    transition: 0.5s var(--cubic-in);
-    transition-delay: 0.5s;
-    transition: opacity 0.5s ease-in-out, transform 0.5s var(--cubic-in);
+    display: flex;
+        align-items: center;
+        transition: opacity 0.5s ease-in-out;
+        z-index: 9999;
 }
 
+/* When the page is loaded, fade out the loading screen */
 .loading .loaded {
     opacity: 0;
-    transform: scaleY(0);
     visibility: hidden;
-    pointer-events: none;
 }
 
-.loading>* {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: var(--transition-2);
-}
-
-.loading .loaded>* {
-    opacity: 0;
-}
-
-/* Circle Animation */
+/* Styling for the rotating circle animation */
 .loading .circle {
-    animation: rotate 2s linear infinite;
     position: absolute;
+    animation: rotate 2s linear infinite;
+    /* Infinite rotation with 2s duration */
 }
 
+/* Keyframe for the rotating animation */
 @keyframes rotate {
     100% {
         transform: rotate(360deg);
     }
 }
-
-
 
 
 
