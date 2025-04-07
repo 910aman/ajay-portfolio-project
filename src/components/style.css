@@ -338,16 +338,26 @@ body.active {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: var(--white);
-    z-index: 5;
-        transform-origin: bottom;
-        transition: 0.5s var(--cubic-in);
-        transition-delay: 0.5s;
+    background: rgba(255, 255, 255, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.5s ease-in-out;
+        z-index: 9999;
     }
+/* When the page is loaded, fade out the loading screen */
 .loading .loaded {
     transform: scaleY(0);
     pointer-events: none;
     opacity: 0;
+    visibility: hidden;
+    }
+    
+    /* Styling for the rotating circle animation */
+    .loading .circle {
+        position: absolute;
+        animation: rotate 2s linear infinite;
+        /* Infinite rotation with 2s duration */
 }
 
 .loading>* {
