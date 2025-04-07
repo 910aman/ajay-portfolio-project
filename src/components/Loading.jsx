@@ -6,7 +6,7 @@ const Loading = () => {
 
     useEffect(() => {
         // Simulating page load
-        window.addEventListener('load', () => {
+        window.addEventListener('loaded', () => {
             setIsLoaded(true);
             document.body.classList.remove('active');
         });
