@@ -339,26 +339,26 @@ body.active {
     width: 100vw;
     height: 100vh;
     background-color: var(--white);
-        z-index: 5;
+    z-index: 5;
         transform-origin: bottom;
         transition: 0.5s var(--cubic-in);
         transition-delay: 0.5s;
     }
-    
-    .loading.loaded {
-        transform: scaleY(0);
-        pointer-events: none;
-    }
-    
-    .loading>* {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        transition: var(--transition-2);
+.loading .loaded {
+    transform: scaleY(0);
+    pointer-events: none;
+    opacity: 0;
 }
 
-.loading.loaded>* {
+.loading>* {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: var(--transition-2);
+}
+
+.loading .loaded>* {
     opacity: 0;
 }
 
@@ -366,10 +366,11 @@ body.active {
     animation: rotate360 1.5s linear infinite;
 }
 
-@keyframes rotate {
+@keyframes rotate360 {
     0% {
-            transform: translate(-50%, -50%) rotate(0);
+        transform: translate(-50%, -50%) rotate(0);
         }
+
     100% {
         transform: translate(-50%, -50%) rotate(1turn);
     }
