@@ -342,7 +342,7 @@ body.active {
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: opacity 0.5s ease-in-out;
+        transition: opacity 0 ease-in-out;
         z-index: 9999;
     }
 /* When the page is loaded, fade out the loading screen */
